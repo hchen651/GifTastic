@@ -32,6 +32,7 @@ $(document).on('click', '.animal-button', function () {
                 var rating = results[i].rating;
                 var p = $("<p>").text("Rating: " + rating);
                 var image = $("<img>");
+                gifDiv.addClass("gif-div");
                 image.addClass("gif-image");
                 image.attr("src", results[i].images.fixed_height_still.url);
                 image.attr("data-animated", results[i].images.fixed_height.url);
